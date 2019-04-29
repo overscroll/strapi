@@ -1,11 +1,12 @@
 {
   "host": "localhost",
-  "port": 1337,
+  "port": "${process.env.PORT || 1337}",
+  "production": true,
   "proxy": {
     "enabled": false
   },
   "autoReload": {
-    "enabled": true
+    "enabled": false
   },
   "cron": {
     "enabled": false
