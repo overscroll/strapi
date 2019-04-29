@@ -1,0 +1,22 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "settings": {
+        "client": "postgres",
+        "host": "postgres",
+        "srv": false,
+        "port": "5432",
+        "database": "strapi",
+        "username": "postgres",
+        "password": "test123",
+        "ssl": false
+      },
+      "options": {
+        "authenticationDatabase": "strapi",
+        "ssl": "false"
+      },
+      "connector": "strapi-hook-bookshelf"
+    }
+  }
+}
