@@ -28,7 +28,7 @@ then
 fi
 
 cd $APP_NAME
-strapi start &
+NODE_ENV=${NODE_ENV:-production} strapi start &
 
 strapiPID=$!
 wait "$strapiPID"
