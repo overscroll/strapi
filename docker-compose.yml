@@ -17,7 +17,8 @@ services:
       - NODE_ENV=development
     ports:
       - 1337:1337
-      #- /usr/src/api/strapi-app/node_modules
+    volumes:
+      - ./strapi-app:/usr/src/api/strapi-app
     depends_on:
       - postgres
     restart: always

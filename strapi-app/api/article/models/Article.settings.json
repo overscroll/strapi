@@ -13,6 +13,45 @@
   "attributes": {
     "headline": {
       "type": "string"
+    },
+    "kicker": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "status": {
+      "default": "draft",
+      "enum": [
+        "published",
+        "draft",
+        "deleted"
+      ],
+      "type": "enumeration"
+    },
+    "author": {
+      "collection": "user",
+      "via": "articles",
+      "dominant": true,
+      "plugin": "users-permissions"
+    },
+    "poster": {
+      "type": "json"
+    },
+    "content": {
+      "type": "json"
+    },
+    "colorBackground": {
+      "type": "string"
+    },
+    "colorContrast": {
+      "type": "string"
+    },
+    "colorText": {
+      "type": "string"
     }
   }
 }
