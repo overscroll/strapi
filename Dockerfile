@@ -1,4 +1,4 @@
-FROM node:11.1.0-alpine
+FROM strapi/strapi
 
 LABEL maintainer="Tobias Block <tobias@overscroll.com>" \
       org.label-schema.vendor="overscroll" \
@@ -13,16 +13,7 @@ COPY strapi-app /usr/src/api/strapi-app
 
 RUN echo "unsafe-perm = true" >> ~/.npmrc
 
-RUN npm install -g strapi@alpha
-
 COPY strapi.sh ./
 RUN chmod +x ./strapi.sh
-
-EXPOSE 1337
-
-COPY healthcheck.js ./
-
-HEALTHCHECK --interval=15s --timeout=5s --start-period=30s \
-      CMD node /usr/src/api/healthcheck.js
 
 CMD ["./strapi.sh"]
