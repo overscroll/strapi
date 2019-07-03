@@ -1,0 +1,7 @@
+.git
+db
+postgresdb
+*node_modules
+*/node_modules
+node_modules
+strapi-app/node_modules

@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "topics",
+  "info": {
+    "name": "topic",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "Name": {
+      "required": true,
+      "type": "string"
+    },
+    "slug": {
+      "required": true,
+      "type": "string"
+    },
+    "articles": {
+      "collection": "article",
+      "via": "topic"
+    }
+  }
+}

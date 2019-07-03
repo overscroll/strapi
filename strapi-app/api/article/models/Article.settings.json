@@ -32,12 +32,6 @@
       ],
       "type": "enumeration"
     },
-    "author": {
-      "collection": "user",
-      "via": "articles",
-      "dominant": true,
-      "plugin": "users-permissions"
-    },
     "poster": {
       "type": "json"
     },
@@ -52,6 +46,20 @@
     },
     "colorText": {
       "type": "string"
+    },
+    "topic": {
+      "model": "topic",
+      "via": "articles"
+    },
+    "author": {
+      "collection": "user",
+      "dominant": true,
+      "via": "articles",
+      "plugin": "users-permissions"
+    },
+    "collections": {
+      "collection": "collection",
+      "via": "articles"
     }
   }
 }

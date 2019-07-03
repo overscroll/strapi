@@ -21,6 +21,7 @@ services:
       - ./strapi-app:/usr/src/api/strapi-app
     depends_on:
       - postgres
+    command: ["./strapi.sh"]
     restart: always
   postgres:
     image: postgres:10.4

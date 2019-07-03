@@ -108,3 +108,14 @@ node_modules
 
 testApp
 coverage
+
+
+############################
+# Strapi
+############################
+
+*/exports
+*/.cache
+*/build
+*/_plugins
+strapi-app/admin
