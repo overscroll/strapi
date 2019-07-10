@@ -51,12 +51,6 @@
       "model": "topic",
       "via": "articles"
     },
-    "author": {
-      "collection": "user",
-      "dominant": true,
-      "via": "articles",
-      "plugin": "users-permissions"
-    },
     "collections": {
       "collection": "collection",
       "via": "articles"

@@ -18,12 +18,15 @@ services:
     ports:
       - 1337:1337
     volumes:
-      - ./strapi-app:/usr/src/api/strapi-app
+      - ./strapi-app/api:/usr/src/api/strapi-app/api
+      - ./strapi-app/config:/usr/src/api/strapi-app/config
+      - ./strapi-app/extensions:/usr/src/api/strapi-app/extensions
+      - ./strapi-app/public:/usr/src/api/strapi-app/public
     depends_on:
       - postgres
     command: ["./strapi.sh"]
     restart: always
-  postgres:
+  postgres: 
     image: postgres:10.4
     restart: always
     volumes:

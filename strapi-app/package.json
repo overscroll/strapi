@@ -18,20 +18,26 @@
     "eslint-plugin-react": "^7.7.0"
   },
   "dependencies": {
+    "knex": "^0.16.5",
     "lodash": "^4.17.5",
-    "strapi": "3.0.0-beta.8",
-    "strapi-admin": "3.0.0-beta.8",
-    "strapi-utils": "3.0.0-beta.8",
-    "strapi-hook-bookshelf": "3.0.0-beta.8",
-    "strapi-hook-knex": "3.0.0-beta.8",
-    "strapi-plugin-content-manager": "3.0.0-beta.8",
-    "strapi-plugin-content-type-builder": "3.0.0-beta.8",
-    "strapi-plugin-email": "3.0.0-beta.8",
-    "strapi-plugin-settings-manager": "3.0.0-beta.8",
-    "strapi-plugin-upload": "3.0.0-beta.8",
-    "strapi-plugin-users-permissions": "3.0.0-beta.8",
-    "knex": "latest",
-    "pg": "7.10.0"
+    "pg": "^7.10.0",
+    "strapi": "3.0.0-beta.9",
+    "strapi-admin": "3.0.0-beta.9",
+    "strapi-hook-bookshelf": "3.0.0-beta.9",
+    "strapi-hook-knex": "3.0.0-beta.9",
+    "strapi-hook-mongoose": "3.0.0-beta.9",
+    "strapi-middleware-views": "3.0.0-beta.9",
+    "strapi-plugin-content-manager": "3.0.0-beta.9",
+    "strapi-plugin-content-type-builder": "3.0.0-beta.9",
+    "strapi-plugin-documentation": "3.0.0-beta.9",
+    "strapi-plugin-email": "3.0.0-beta.9",
+    "strapi-plugin-graphql": "3.0.0-beta.9",
+    "strapi-plugin-settings-manager": "3.0.0-beta.9",
+    "strapi-plugin-upload": "3.0.0-beta.9",
+    "strapi-plugin-users-permissions": "3.0.0-beta.9",
+    "strapi-provider-email-mailgun": "3.0.0-beta.9",
+    "strapi-provider-upload-aws-s3": "3.0.0-beta.9",
+    "strapi-utils": "3.0.0-beta.9"
   },
   "author": {
     "name": "A Strapi developer",
@@ -46,7 +52,7 @@
     }
   ],
   "strapi": {
-    "uuid": "6579396c-4b60-43b9-939f-bd218cd501fd"
+    "uuid": "6579396c-4b60-43b9-3332-bd218cd501fd"
   },
   "engines": {
     "node": ">= 10.0.0",
